@@ -19,7 +19,7 @@ body {
 
 /*-----------navbar------------*/
 .navbar {
-  width: 20%;
+  min-width: 20%;
   height: 100%;
   position: fixed;
   left: 0;
@@ -28,6 +28,7 @@ body {
   border-right: 2px solid RGB(38, 38, 38);
   padding-left: 1rem;
   padding: 2rem;
+  z-index: 5;
 }
 
 .navbar h3 {
@@ -75,4 +76,30 @@ body {
 
 #more {
   margin-top: auto;
+}
+
+/*-------container----------*/
+
+.container {
+  position: relative;
+  max-width: 80%;
+  height: 100vh;
+  margin-left: 20%; /*problem*/
+}
+
+/*-----------stories-----------*/
+
+.container .stories .pages img {
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid;
+  position: relative;
+}
+
+.container .stories {
+  column-gap: 2rem;
+}
+
+.container .stories .pages h6 {
+  color: white;
 }
