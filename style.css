@@ -82,15 +82,22 @@ body {
 
 .container {
   position: relative;
-  max-width: 80%;
+  width: 80%;
   height: 100vh;
   margin-left: 20%; /*problem*/
+}
+
+/* ----------part-1------------ */
+
+.part-1 {
+  width: 60%;
+  padding-left: 5rem;
 }
 
 /*-----------stories-----------*/
 
 .container .stories {
-  min-width: 70%;
+  position: relative;
   height: auto;
   column-gap: 2rem;
   margin-top: 1.5rem;
@@ -125,4 +132,50 @@ body {
 
 .container .stories .pages h6 {
   color: white;
+}
+
+/* ----------postes---------- */
+
+.container .postes .post {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.container .postes .post .carousel {
+  width: 30rem !important;
+}
+
+.container .postes .post img {
+  width: 30rem;
+}
+
+/* -------------owner------------ */
+
+.container .postes .post .owner {
+  margin-right: auto;
+  color: white;
+}
+
+.container .postes .post .caption {
+  width: 30rem !important;
+}
+
+.container .postes .features svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 10px;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.container .postes p {
+  color: white;
+}
+
+/* -------------part-2----------- */
+.part-2 {
+  width: 40%;
+  height: auto;
+  background-color: red;
 }
