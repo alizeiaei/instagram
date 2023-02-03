@@ -9,6 +9,8 @@
 :root {
   --body-color: rgb(0, 0, 0);
   --color-icon: rgb(250, 250, 250);
+  --gray-color: silver;
+  --white-color: white;
 }
 
 /*------------body--------------*/
@@ -40,18 +42,26 @@ body {
 
 .navbar .icons {
   column-gap: 10px;
-  height: auto;
+  height: 4rem;
   cursor: pointer;
   transition: 0.3s;
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 3px;
-  border-radius: 10%;
+  border-radius: 10rem;
+}
+
+.navbar button {
+  background-color: transparent;
+  border: none;
 }
 
 .navbar .icons:hover {
   background-color: #6e6a6abb;
+}
+
+.navbar img {
+  margin-left: 1rem;
 }
 
 .navbar .icons:hover img {
@@ -91,7 +101,7 @@ body {
 
 .part-1 {
   width: 60%;
-  padding-left: 5rem;
+  padding-left: 8rem;
 }
 
 /*-----------stories-----------*/
@@ -100,7 +110,7 @@ body {
   position: relative;
   height: auto;
   column-gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .container .stories .pages button {
@@ -115,7 +125,7 @@ body {
   content: "";
   position: absolute;
   border-radius: 50%;
-  inset: -4px;
+  inset: -2px;
   background: linear-gradient(
     RGB(211, 0, 197),
     RGB(239, 0, 137),
@@ -131,7 +141,7 @@ body {
 }
 
 .container .stories .pages h6 {
-  color: white;
+  color: var(--white-color);
 }
 
 /* ----------postes---------- */
@@ -153,7 +163,7 @@ body {
 
 .container .postes .post .owner {
   margin-right: auto;
-  color: white;
+  color: var(--white-color);
 }
 
 .container .postes .post .caption {
@@ -164,18 +174,65 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 10px;
-  color: white;
+  color: var(--white-color);
   margin-top: 1rem;
   cursor: pointer;
 }
 
 .container .postes p {
-  color: white;
+  color: var(--white-color);
 }
 
 /* -------------part-2----------- */
 .part-2 {
-  width: 40%;
+  min-width: 40%;
   height: auto;
-  background-color: red;
+  padding-top: 3rem;
+  position: relative;
 }
+
+/*-------------owen-page----------*/
+
+.owen-pages {
+  width: 100%;
+  position: relative;
+}
+.part-2 .owen-pages img {
+  width: 3.5rem;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.part-2 .owen-pages .label {
+  color: var(--white-color);
+  position: absolute;
+  margin-left: 10px;
+}
+
+.part-2 .owen-pages p {
+  display: inline-block;
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 10px;
+  color: var(--gray-color);
+}
+
+.part-2 .owen-pages a {
+  text-decoration: none;
+  margin-left: 12rem;
+}
+
+/* -------------see all-------------- */
+
+.part-2 .see-all h6 {
+  color: var(--gray-color);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#Followers {
+  width: 3rem;
+}
+
+/* --------------------Finish---------------------- */
